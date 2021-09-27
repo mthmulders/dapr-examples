@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<server description="Shopping Cart server">
+    <featureManager>
+        <feature>cdi-2.0</feature>
+        <feature>jaxrs-2.1</feature>
+        <feature>jsonb-1.0</feature>
+    </featureManager>
+
+    <variable name="application.name" defaultValue="shopping-cart" />
+
+    <variable name="default.http.port" defaultValue="9080" />
+    <variable name="default.https.port" defaultValue="9443" />
+
+    <webApplication location="${application.name}.war" name="${application.name}" contextRoot="/">
+    </webApplication>
+
+    <httpEndpoint host="*"
+                  httpPort="${default.http.port}"
+                  httpsPort="${default.https.port}"
+                  id="defaultHttpEndpoint" />
+
+    <applicationMonitor dropinsEnabled="false" />
+</server>

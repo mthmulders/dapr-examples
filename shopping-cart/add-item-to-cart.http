@@ -1,0 +1,15 @@
+PUT http://localhost:9080/cart/add/21e0a7a4-61ac-410e-ac14-eb1372f696dc?itemCount=5
+Cookie: JSESSIONID=0000-jWU63TqIsUxb5iMZlnlLDH:0caccaf7-9ebd-4b76-98cf-5abe1139a6ad
+Content-Type: application/json
+
+###
+
+PUT http://localhost:9080/cart/add/a03945fe-70ff-439b-b807-281c5506843e?itemCount=3
+Cookie: JSESSIONID=0000-jWU63TqIsUxb5iMZlnlLDH:0caccaf7-9ebd-4b76-98cf-5abe1139a6ad
+Content-Type: application/json
+
+###
+
+GET http://localhost:9080/cart/
+Cookie: JSESSIONID=0000-jWU63TqIsUxb5iMZlnlLDH:0caccaf7-9ebd-4b76-98cf-5abe1139a6ad
+Content-Type: application/json
